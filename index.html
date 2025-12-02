@@ -209,8 +209,8 @@
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-tshirt"></i> Toko Fashion Kami</h1>
-        <p>Produk fashion terbaik untuk Anda – Trendy dan Berkualitas</p>
+        <h1><i class="fas fa-tshirt"></i> TokoKami</h1>
+        <p>Dapatkan Style Terbaru setiap hari tanpa overspending. Pasti Hemat dan Pasti Tenang dengan garansi Retur Mudah 100%</p>
     </header>
     <nav>
         <a href="#home"><i class="fas fa-home"></i> Beranda</a>
@@ -245,16 +245,21 @@
                 
                 <label for="product"><i class="fas fa-box"></i> Produk yang Diretur:</label>
                 <select id="product" name="product" required>
-                    <option value="">Pilih Produk</option>
+                    <option value="Kemeja Putih Polos">Kemeja Putih Polos</option>
+                    <option value="Polo Black">Polo Black</option>
                     <option value="Kaos Polos">Kaos Polos</option>
                     <option value="Celana Jeans">Celana Jeans</option>
-                    <option value="Dress Wanita">Dress Wanita</option>
+                    <option value="Slim Fit Formal Pants">Slim Fit Formal Pants</option>
+                    <option value="Ukhti Muslimah Dress">Ukhti Muslimah Dress</option>
+                    <option value="Women Formal Pants">Ukhti Muslimah Dress</option>
+                    <option value="Women Skirt">Women Skirt</option>
                     <option value="Sepatu Sneakers">Sepatu Sneakers</option>
-                    <option value="Tas Kulit">Tas Kulit</option>
+                    <option value="Tas Kulit Wanita">Tas Kulit</option>
                     <option value="Topi Baseball">Topi Baseball</option>
                     <option value="Jaket Kulit">Jaket Kulit</option>
-                    <option value="Blouse Wanita">Blouse Wanita</option>
+                    <option value="Women Blouse">Blouse Wanita</option>
                     <option value="Sepatu Lari">Sepatu Lari</option>
+                
                 </select>
                 
                 <label for="reason"><i class="fas fa-comment"></i> Alasan Retur:</label>
@@ -265,22 +270,25 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2023 Toko Fashion Kami. Semua hak dilindungi. <i class="fas fa-heart"></i></p>
+        <p>&copy; 2023 TokoKami. Semua hak dilindungi. <i class="fas fa-heart"></i></p>
     </footer>
 
     <script>
         // Data produk dengan kategori
         const products = [
             { name: "Kemeja Putih Polos", category: "Men", originalPrice: "Rp 195.000", discountedPrice: "Rp 170.000", image: "https://cottonink.co.id/cdn/shop/files/AksaraPutih_20250804_01.jpg?v=1753240617" },
-            { name: "Kaos Polo Black", category: "Men", originalPrice: "Rp 95.000", discountedPrice: "Rp 70.000", image: "https://i.ebayimg.com/images/g/OyYAAeSwMHxoY1c8/s-l960.webp" },
+            { name: "Polo Black", category: "Men", originalPrice: "Rp 95.000", discountedPrice: "Rp 70.000", image: "https://i.ebayimg.com/images/g/OyYAAeSwMHxoY1c8/s-l960.webp" },
             { name: "Kaos Polos", category: "Men", originalPrice: "Rp 75.000", discountedPrice: "Rp 50.000", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=250&h=200&fit=crop" },
+            { name: "Slim Fit Formal Pants", category: "Men", originalPrice: "Rp 250.000", discountedPrice: "Rp 225.000", image: "https://executive.co.id/cdn/shop/products/1-LPIBSC523O073_BLACK_1_460x.jpg?v=1740550928" },
+            { name: "Ukhti Muslimah Dress", category: "Women", original price: "Rp550.000", discountedprice: "Rp450.000", image: "https://hijaberlin.com/cdn/shop/files/64_70ec5425-79ca-4566-b99d-ff25de8d1f22_750x.png?v=1747800808" },
             { name: "Celana Jeans", category: "Men", originalPrice: "Rp 200.000", discountedPrice: "Rp 150.000", image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=250&h=200&fit=crop" },
-            { name: "Dress Wanita", category: "Women", originalPrice: "Rp 300.000", discountedPrice: "Rp 200.000", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=250&h=200&fit=crop" },
+            { name: "Women Formal Pants", cetegory: "Women", originalprice: "Rp369.000", discountedprice: "Rp299.000", image: "https://shop.heavenlights.id/cdn/shop/files/huda_-_dawn3-4x5.jpg?v=1762743701&width=600" },
+            { name: "Women Skirt", category: "Women", originalPrice: "Rp 300.000", discountedPrice: "Rp 200.000", image: "https://shop.heavenlights.id/cdn/shop/files/ezza_skirt_-_ivory3-4x5.jpg?v=1762741115&width=600" },
             { name: "Sepatu Sneakers", category: "Sport", originalPrice: "Rp 400.000", discountedPrice: "Rp 300.000", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=250&h=200&fit=crop" },
-            { name: "Tas Kulit", category: "Women", originalPrice: "Rp 350.000", discountedPrice: "Rp 250.000", image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=250&h=200&fit=crop" },
-            { name: "Topi Baseball", category: "Sport", originalPrice: "Rp 100.000", discountedPrice: "Rp 75.000", image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=250&h=200&fit=crop" },
+            { name: "Tas Kulit Wanita", category: "Women", originalPrice: "Rp 350.000", discountedPrice: "Rp 250.000", image: "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/1/15/d4c3bae5-0808-42ee-965a-c21a91c21415.jpg" },
+            { name: "Topi Baseball", category: "Sport", originalPrice: "Rp 100.000", discountedPrice: "Rp 75.000", image: "https://down-id.img.susercontent.com/file/cc2d8deecde03298f0a89ce833b1522e" },
             { name: "Jaket Kulit", category: "Men", originalPrice: "Rp 500.000", discountedPrice: "Rp 400.000", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=250&h=200&fit=crop" },
-            { name: "Blouse Wanita", category: "Women", originalPrice: "Rp 150.000", discountedPrice: "Rp 120.000", image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=250&h=200&fit=crop" },
+            { name: "Women Blouse", category: "Women", originalPrice: "Rp 150.000", discountedPrice: "Rp 120.000", image: "https://down-id.img.susercontent.com/file/id-11134207-7r991-lqkeco8zwtmu6f" },
             { name: "Sepatu Lari", category: "Sport", originalPrice: "Rp 600.000", discountedPrice: "Rp 450.000", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=250&h=200&fit=crop" }
         ];
 
